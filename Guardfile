@@ -16,7 +16,7 @@
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
 require 'guard/jekyll_plus/config'
-jekyll_plus_options = {}
+jekyll_plus_options = { serve: true }
 guard 'jekyll-plus', jekyll_plus_options do
   watch /.*/
   ignore /^_site/
@@ -24,11 +24,12 @@ guard 'jekyll-plus', jekyll_plus_options do
 end
 
 guard 'livereload' do
+  # watch(%r{_site/.*})
   watch /.*/
-  watch(%r{app/views/.+\.(erb|haml|slim)$})
-  watch(%r{app/helpers/.+\.rb})
-  watch(%r{public/.+\.(css|js|html)})
-  watch(%r{config/locales/.+\.yml})
-  # Rails Assets Pipeline
-  watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html|png|jpg))).*}) { |m| "/assets/#{m[3]}" }
+  # watch(%r{app/views/.+\.(erb|haml|slim)$})
+  # watch(%r{app/helpers/.+\.rb})
+  # watch(%r{public/.+\.(css|js|html)})
+  # watch(%r{config/locales/.+\.yml})
+  # # Rails Assets Pipeline
+  # watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html|png|jpg))).*}) { |m| "/assets/#{m[3]}" }
 end
