@@ -1,7 +1,7 @@
 # Site settings
 title: TrailMix
 email: info@trailmix.ie
-description: > TrailMix Marketing
+description: > # TrailMix Marketing
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.trailmix.ie" # the base hostname & protocol for your site
 twitter_username: johnmeehan
