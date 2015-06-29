@@ -3,9 +3,13 @@ title: TrailMix
 email: info@trailmix.ie
 description: > # TrailMix Marketing
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.trailmix.ie" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: johnmeehan
 github_username:  johnmeehan
 
 # Build settings
 markdown: kramdown
+
+sass:
+  sass_dir: assets/css
+  style: :nested
