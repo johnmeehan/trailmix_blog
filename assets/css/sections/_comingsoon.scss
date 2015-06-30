@@ -11,17 +11,10 @@ $font_2: Josefin Sans;
 $font_3: sans-serif;
 
 //urls
-$url_0: url(../assets/images/bg.jpg);
-$url_1: url(../assets/images/social.png);
+$url_0: url('../assets/images/bg.jpg');
+$url_1: url('../assets/images/social.png');
 
 #wrapper {
 	height: 100%;
 	// @include outer-container;
 }
-
-
-
-
-
-
-

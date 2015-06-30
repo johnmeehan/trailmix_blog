@@ -1,3 +1,4 @@
+
 .hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -7,7 +8,7 @@
   $hero-color: white;
   $gradient-angle: 10deg;
   // $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
-  $hero-image: '../assets/images/bg.jpg';
+  $hero-image: '/assets/images/bg.jpg';
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   background-color: #324766;
   background-position: top;
